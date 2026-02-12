@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTI 308: Methodology Flow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Patrick+Hand&family=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1" rel="stylesheet" />
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        paper: "#fffdf5",
+                        ink: "#2d2d2d",
+                        "phase-data": "#dbeafe",      /* Blue-100 */
+                        "phase-data-border": "#3b82f6",
+                        "phase-proc": "#ffedd5",      /* Orange-100 */
+                        "phase-proc-border": "#f97316",
+                        "phase-model": "#dcfce7",     /* Green-100 */
+                        "phase-model-border": "#22c55e",
+                        "phase-out": "#f3e8ff",       /* Purple-100 */
+                        "phase-out-border": "#a855f7",
+                    },
+                    fontFamily: {
+                        "display": ["Gloria Hallelujah", "cursive"],
+                        "body": ["Patrick Hand", "cursive"],
+                        "sans": ["Lexend", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'dotted-pattern': 'radial-gradient(#d1d5db 1.5px, transparent 1.5px)',
+                    },
+                    boxShadow: {
+                        'sticker': '2px 3px 5px rgba(0,0,0,0.1), 0 0 0 1px rgba(0,0,0,0.05)',
+                        'floating': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .bg-grid-paper {
+                background-color: #fffdf5;
+                background-image: linear-gradient(#e5e7eb 1px, transparent 1px), linear-gradient(90deg, #e5e7eb 1px, transparent 1px);
+                background-size: 20px 20px;
+            }
+        }
+        
+        .hand-drawn-box {
+            border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+        }
+
+        .washi-tape {
+            background-color: rgba(255, 255, 255, 0.6);
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(0, 0, 0, 0.05) 10px,
+                rgba(0, 0, 0, 0.05) 20px
+            );
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            height: 24px;
+            width: 80px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        /* Connecting Dotted Line Animation */
+        .connector-line {
+            position: absolute;
+            left: 2rem;
+            top: 4rem;
+            bottom: 2rem;
+            width: 4px;
+            background-image: linear-gradient(to bottom, #9ca3af 33%, rgba(255,255,255,0) 0%);
+            background-position: right;
+            background-size: 4px 20px;
+            background-repeat: repeat-y;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-grid-paper text-ink font-body min-h-screen p-4 sm:p-8">
+
+    <div class="max-w-3xl mx-auto relative">
+        
+        <!-- Header Section -->
+        <header class="mb-10 text-center relative">
+            <div class="inline-block bg-white p-6 shadow-floating hand-drawn-box border-2 border-gray-800 relative z-10 transform -rotate-1">
+                <!-- Washi Tape -->
+                <div class="washi-tape -top-3 left-1/2 -translate-x-1/2 rotate-2"></div>
+
+                <h3 class="font-sans text-xs font-bold tracking-widest text-gray-500 uppercase mb-1">Imam Abdulrahman Bin Faisal University</h3>
+                <p class="font-sans text-[10px] text-gray-400 font-medium mb-1">College of Computer Science & IT | 2025/2026 - 2nd Semester</p>
+                
+                <!-- Student Name Added Here -->
+                <p class="font-display text-lg text-indigo-600 font-bold mb-3 transform -rotate-1 inline-block border-b-2 border-indigo-200">Ahmed Khan</p>
+                
+                <h1 class="font-display text-4xl sm:text-5xl text-gray-800 mb-2 mt-2">ARTI 308</h1>
+                <h2 class="font-display text-2xl text-gray-600">Machine Learning</h2>
+                
+                <div class="flex flex-wrap justify-center gap-2 mt-4">
+                    <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white" alt="Python" class="h-6 rounded-md shadow-sm"></a>
+                    <a href="https://jupyter.org"><img src="https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white" alt="Jupyter" class="h-6 rounded-md shadow-sm"></a>
+                    <a href="https://pandas.pydata.org"><img src="https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white" alt="Pandas" class="h-6 rounded-md shadow-sm"></a>
+                    <a href="https://scikit-learn.org"><img src="https://img.shields.io/badge/scikit--learn-ML-F7931E?logo=scikit-learn&logoColor=white" alt="Scikit Learn" class="h-6 rounded-md shadow-sm"></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Title & Legend -->
+        <div class="flex flex-col sm:flex-row justify-between items-end gap-4 mb-8 px-4">
+            <div class="relative">
+                 <h2 class="font-display text-3xl text-gray-800 relative z-10">
+                    Methodology: <br>
+                    <span class="text-pink-600">Heart Disease Classification</span>
+                    <svg class="absolute w-full h-3 -bottom-1 left-0 text-yellow-300 opacity-60 z-[-1]" preserveAspectRatio="none" viewBox="0 0 100 10"><path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8"></path></svg>
+                </h2>
+            </div>
+
+            <!-- Legend Box -->
+            <div class="bg-white p-3 rounded-xl border border-gray-200 shadow-sticker transform rotate-2">
+                <h4 class="font-display text-sm font-bold mb-2 border-b border-dashed border-gray-300">Color Key:</h4>
+                <div class="flex flex-col gap-1 text-xs font-sans">
+                    <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-blue-400"></span> Data Phase</div>
+                    <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-orange-400"></span> Processing</div>
+                    <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-green-400"></span> Modeling</div>
+                    <div class="flex items-center gap-2"><span class="w-3 h-3 rounded-full bg-purple-400"></span> Output</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Flowchart Container -->
+        <div class="relative pl-2 sm:pl-4 py-4 space-y-8">
+            <!-- Connector Line -->
+            <div class="connector-line left-[2.5rem] sm:left-[3.5rem]"></div>
+
+            <!-- Step 1: Dataset Selection (Blue) -->
+            <div class="relative flex items-center gap-6 group">
+                <div class="z-10 w-16 h-16 bg-white border-4 border-phase-data-border rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-phase-data-border text-3xl">database</span>
+                </div>
+                <div class="flex-1 bg-phase-data border-2 border-phase-data-border p-4 hand-drawn-box shadow-sticker transform -rotate-1 relative">
+                    <div class="washi-tape -top-2 right-10 bg-blue-200/50 rotate-[-2deg]"></div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs font-bold font-sans text-blue-800 uppercase tracking-wider">Step 1</span>
+                            <h3 class="text-xl font-display font-bold text-blue-900">Dataset Selection</h3>
+                            <p class="text-sm text-blue-800/80 leading-tight">Identifying the Heart Disease dataset.</p>
+                        </div>
+                        <span class="text-2xl opacity-20 font-display">01</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: Data Loading (Blue) -->
+            <div class="relative flex items-center gap-6 group">
+                <div class="z-10 w-16 h-16 bg-white border-4 border-phase-data-border rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-phase-data-border text-3xl">upload_file</span>
+                </div>
+                <div class="flex-1 bg-phase-data border-2 border-phase-data-border p-4 hand-drawn-box shadow-sticker transform rotate-1 relative">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs font-bold font-sans text-blue-800 uppercase tracking-wider">Step 2</span>
+                            <h3 class="text-xl font-display font-bold text-blue-900">Data Loading</h3>
+                            <p class="text-sm text-blue-800/80 leading-tight">Importing CSV into Pandas DataFrame.</p>
+                        </div>
+                        <span class="text-2xl opacity-20 font-display">02</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Data Preprocessing (Orange) -->
+            <div class="relative flex items-center gap-6 group">
+                <div class="z-10 w-16 h-16 bg-white border-4 border-phase-proc-border rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-phase-proc-border text-3xl">cleaning_services</span>
+                </div>
+                <div class="flex-1 bg-phase-proc border-2 border-phase-proc-border p-4 hand-drawn-box shadow-sticker transform -rotate-1 relative">
+                    <div class="washi-tape -top-2 left-4 bg-orange-200/50 rotate-1"></div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs font-bold font-sans text-orange-800 uppercase tracking-wider">Step 3</span>
+                            <h3 class="text-xl font-display font-bold text-orange-900">Data Preprocessing</h3>
+                            <p class="text-sm text-orange-800/80 leading-tight">Cleaning, normalization, & encoding.</p>
+                        </div>
+                        <span class="text-2xl opacity-20 font-display">03</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: Train/Test Split (Orange) -->
+            <div class="relative flex items-center gap-6 group">
+                <div class="z-10 w-16 h-16 bg-white border-4 border-phase-proc-border rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-phase-proc-border text-3xl">call_split</span>
+                </div>
+                <div class="flex-1 bg-phase-proc border-2 border-phase-proc-border p-4 hand-drawn-box shadow-sticker transform rotate-2 relative">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs font-bold font-sans text-orange-800 uppercase tracking-wider">Step 4</span>
+                            <h3 class="text-xl font-display font-bold text-orange-900">Train/Test Split</h3>
+                            <p class="text-sm text-orange-800/80 leading-tight">Dividing data (e.g., 80% Train, 20% Test).</p>
+                        </div>
+                        <span class="text-2xl opacity-20 font-display">04</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Model Training (Green) -->
+            <div class="relative flex items-center gap-6 group">
+                <div class="z-10 w-16 h-16 bg-white border-4 border-phase-model-border rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-phase-model-border text-3xl">model_training</span>
+                </div>
+                <div class="flex-1 bg-phase-model border-2 border-phase-model-border p-4 hand-drawn-box shadow-sticker transform -rotate-1 relative">
+                    <div class="washi-tape -top-2 right-10 bg-green-200/50 rotate-[-1deg]"></div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs font-bold font-sans text-green-800 uppercase tracking-wider">Step 5</span>
+                            <h3 class="text-xl font-display font-bold text-green-900">Model Training</h3>
+                            <p class="text-sm text-green-800/80 leading-tight">Fitting the algorithm to the data.</p>
+                        </div>
+                        <span class="text-2xl opacity-20 font-display">05</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6: Model Evaluation (Green) -->
+            <div class="relative flex items-center gap-6 group">
+                <div class="z-10 w-16 h-16 bg-white border-4 border-phase-model-border rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-phase-model-border text-3xl">analytics</span>
+                </div>
+                <div class="flex-1 bg-phase-model border-2 border-phase-model-border p-4 hand-drawn-box shadow-sticker transform rotate-1 relative">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="text-xs font-bold font-sans text-green-800 uppercase tracking-wider">Step 6</span>
+                            <h3 class="text-xl font-display font-bold text-green-900">Model Evaluation</h3>
+                            <p class="text-sm text-green-800/80 leading-tight">Checking Accuracy, Precision, & Recall.</p>
+                        </div>
+                        <span class="text-2xl opacity-20 font-display">06</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 7: Results (Purple) -->
+            <div class="relative flex items-center gap-6 group">
+                <div class="z-10 w-16 h-16 bg-white border-4 border-phase-out-border rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-phase-out-border text-3xl">verified</span>
+                </div>
+                <div class="flex-1 bg-phase-out border-2 border-phase-out-border p-4 hand-drawn-box shadow-sticker transform -rotate-2 relative">
+                    <div class="washi-tape -top-3 left-1/2 -translate-x-1/2 bg-purple-200/50 rotate-2"></div>
+                    <div class="flex justify-between items-center">
+                        <div>
+                            <span class="text-xs font-bold font-sans text-purple-800 uppercase tracking-wider">Step 7</span>
+                            <h3 class="text-2xl font-display font-bold text-purple-900">Results</h3>
+                            <p class="text-sm text-purple-800/80 leading-tight">Final predictions & report.</p>
+                        </div>
+                        <span class="material-symbols-outlined text-4xl text-purple-400 rotate-12">flag</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mt-12 text-center relative">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                <span class="material-symbols-outlined text-4xl text-red-400 animate-bounce">favorite</span>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
