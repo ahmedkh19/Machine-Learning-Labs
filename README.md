@@ -21,6 +21,7 @@ Academic Year 2025/2026 - 2nd Semester
 |:---:|-------|-------------|
 | [Lab 1](Lab1/) | Git & GitHub | Version control fundamentals, repositories, branches, pull requests, and Jupyter in VS Code |
 | [Lab 2](Lab2/) | ML Problem Definition | Identifying ML problem types, dataset selection, exploratory inspection, and methodology design |
+| [Lab 3](Lab3/) | Exploratory Data Analysis | EDA techniques applied to the Heart Disease dataset before model building |
 
 ## Tech Stack
 
@@ -50,11 +51,16 @@ pip install pandas matplotlib scikit-learn jupyter
 ```
 Machine-Learning-Labs/
 ├── Lab1/                   # Git & GitHub basics
+│   └── README.md
 ├── Lab2/                   # ML problem identification & dataset exploration
-│   ├── heart.csv           # UCI Heart Disease dataset
-│   ├── Lab2.ipynb          # Exploratory notebook
+│   ├── heart.csv
+│   ├── Lab2.ipynb
 │   ├── methodology_diagram.png
 │   └── README.md
-├── lectures/               # Course lecture materials (PDF)
+├── Lab3/                   # Exploratory Data Analysis (EDA)
+│   ├── heart.csv
+│   ├── Lab3.ipynb
+│   └── README.md
+├── lectures/               # Course lecture materials
 └── README.md
 ```
