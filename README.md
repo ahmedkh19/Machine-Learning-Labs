@@ -25,6 +25,9 @@ Academic Year 2025/2026 - 2nd Semester
 | [Lab 4](Lab4/) | Data Preprocessing | Data quality assessment, missing values, outliers, normalization, and PCA |
 | [Lab 5](Lab5/) | Feature Engineering | Feature engineering for classification on the Heart Disease dataset |
 | [Lab 6](Lab6/) | Linear Regression | Housing price prediction with linear regression and evaluation metrics |
+| [Lab 7](Lab7/) | Logistic Regression | Predicting ad clicks on the Advertising dataset with logistic regression |
+| [Lab 8](Lab8/) | K-Nearest Neighbors | Classifying anonymized data with KNN and the elbow method |
+| [Lab 9](Lab9/) | Decision Trees & Random Forests | Predicting loan default on LendingClub data with tree-based classifiers |
 
 ## Tech Stack
 
@@ -78,6 +81,27 @@ Machine-Learning-Labs/
 │   ├── USA_Housing.csv
 │   ├── Ecommerce_Customers.csv
 │   ├── Lab6.ipynb
+│   ├── methodology_diagram.png
+│   └── README.md
+├── Lab7/                   # Logistic Regression
+│   ├── advertising.csv
+│   ├── titanic_train.csv
+│   ├── 01-Logistic Regression.ipynb
+│   ├── 02-Logistic Regression Assignment.ipynb
+│   ├── methodology_diagram.png
+│   └── README.md
+├── Lab8/                   # K-Nearest Neighbors
+│   ├── Classified Data
+│   ├── KNN_Project_Data
+│   ├── 01-K Nearest Neighbors.ipynb
+│   ├── 02-K Nearest Neighbors Assignment.ipynb
+│   ├── methodology_diagram.png
+│   └── README.md
+├── Lab9/                   # Decision Trees & Random Forests
+│   ├── kyphosis.csv
+│   ├── loan_data.csv
+│   ├── 01-Decision Trees and Random Forests.ipynb
+│   ├── 02-Decision Trees and Random Forest Project.ipynb
 │   ├── methodology_diagram.png
 │   └── README.md
 ├── lectures/               # Course lecture materials
