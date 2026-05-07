@@ -28,6 +28,7 @@ Academic Year 2025/2026 - 2nd Semester
 | [Lab 7](Lab7/) | Logistic Regression | Predicting ad clicks on the Advertising dataset with logistic regression |
 | [Lab 8](Lab8/) | K-Nearest Neighbors | Classifying anonymized data with KNN and the elbow method |
 | [Lab 9](Lab9/) | Decision Trees & Random Forests | Predicting loan default on LendingClub data with tree-based classifiers |
+| [Lab 10](Lab10/) | Support Vector Machines | Multiclass Iris classification with SVM and `GridSearchCV` hyperparameter tuning |
 
 ## Tech Stack
 
@@ -102,6 +103,11 @@ Machine-Learning-Labs/
 │   ├── loan_data.csv
 │   ├── 01-Decision Trees and Random Forests.ipynb
 │   ├── 02-Decision Trees and Random Forest Project.ipynb
+│   ├── methodology_diagram.png
+│   └── README.md
+├── Lab10/                  # Support Vector Machines
+│   ├── 01-Support Vector Machines.ipynb
+│   ├── 02-SVM Assignment.ipynb
 │   ├── methodology_diagram.png
 │   └── README.md
 ├── lectures/               # Course lecture materials
