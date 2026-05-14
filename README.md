@@ -29,6 +29,7 @@ Academic Year 2025/2026 - 2nd Semester
 | [Lab 8](Lab8/) | K-Nearest Neighbors | Classifying anonymized data with KNN and the elbow method |
 | [Lab 9](Lab9/) | Decision Trees & Random Forests | Predicting loan default on LendingClub data with tree-based classifiers |
 | [Lab 10](Lab10/) | Support Vector Machines | Multiclass Iris classification with SVM and `GridSearchCV` hyperparameter tuning |
+| [Lab 11](Lab11/) | K-Means Clustering | Unsupervised customer segmentation on credit card behavior data |
 
 ## Tech Stack
 
@@ -108,6 +109,13 @@ Machine-Learning-Labs/
 ├── Lab10/                  # Support Vector Machines
 │   ├── 01-Support Vector Machines.ipynb
 │   ├── 02-SVM Assignment.ipynb
+│   ├── methodology_diagram.png
+│   └── README.md
+├── Lab11/                  # K-Means Clustering
+│   ├── CC_GENERAL.csv
+│   ├── mall_customers.csv
+│   ├── 01-Customer Segmentation with K-Means.ipynb
+│   ├── 02-Credit Card Customer Segmentation Assignment.ipynb
 │   ├── methodology_diagram.png
 │   └── README.md
 ├── lectures/               # Course lecture materials
